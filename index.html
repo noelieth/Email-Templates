@@ -3,12 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Templates - Piece</title>
+    <title>HTML Templates - Piece</title> 
+    <style>
+* {
+  box-sizing: border-radius;
+  font-family: 'Inter', sans-serif;
+}
+.container {
+  border: 1px solid black;
+  
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: auto;
+  
+  display: grid;
+  place-items: center;
+  background-color: #29422F;
+}
+
+.items {
+  width: 300px;
+  background: #fffffe;
+  box-shadow: 0 3px 6px rgba(black,0.16), 0 3px 6px rgba(black,0.23);
+  border-top: 10px solid #DDC5AF;
+}
+
+.items-head p{
+  padding: 5px 20px;
+  margin: 10px;
+  color: #C65366;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.items-head hr {
+  width: 20%;
+  margin: 0px 30px;
+  border: 1px solid #29422F;
+}
+
+.items-body {
+  padding: 10px;
+  margin: 10px;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.items-body-content {
+  border-radius: 8px;
+  padding: 10px;
+  padding-right: 0px;
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  background-color: #93b39b;
+  font-size: 13px;
+  grid-gap: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  
+}
+
+.items-body-content a {
+  text-decoration: none; color: #2b2e2b;
+  
+}
+.items-body-content:hover {
+  border-radius: 8px;
+  border: 1px solid #29422F;
+}
+
+
+@keyframes icon {
+  0%,100%{
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(3px);
+  }
+}
+    </style>
 </head>
 <body>
-    <a href="email 1/email1.html"> Email 1</a>
-    <a href="email 2/email2.html"> Email 2</a>
-    <a href="email 3/email3.html"> Email 3</a>
-    <a href="email 4/email4.html"> Email 4</a>
+    <div class="container">
+        <div class="items">
+          <div class="items-head">
+            <p>HTML Email Templates - Piece</p>
+            <hr>
+          </div>
+          
+          <div class="items-body">
+            <div class="items-body-content">
+              <a href="email 1/email1.html"> Email 1</a>
+            </div>
+            <div class="items-body-content">
+              <a href="email 2/email2.html"> Email 2</a>
+            </div>
+            <div class="items-body-content">
+              <a href="email 3/email3.html"> Email 3</a>
+            </div>
+            <div class="items-body-content">
+              <a href="email 4/email4.html"> Email 4</a>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
